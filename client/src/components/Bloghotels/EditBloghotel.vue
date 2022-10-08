@@ -285,5 +285,5 @@ export default {
     input,select {
       width: 450px;
     }
-
+  
 </style>
