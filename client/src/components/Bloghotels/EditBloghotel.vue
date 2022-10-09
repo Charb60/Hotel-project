@@ -2,7 +2,6 @@
   <div>
     <b-container class="bv-example-row">
       <b-row class="text-left">
-        <b-col></b-col>
         <b-col cols="10" class="bg1">
         <center>
           <h1><b>Hotel Bangkok</b></h1>
@@ -33,7 +32,6 @@
             </p>
           </form>
           </b-col>
-        <b-col> </b-col>
       </b-row>
     </b-container>
   </div>
@@ -230,7 +228,7 @@ export default {
 };
 </script>
 <style scoped>
-    .dropbox{
+   .dropbox{
         outline: 2px dashed gray; /* the dash box */
         outline-offset: -10px;
         background: #fec3df;

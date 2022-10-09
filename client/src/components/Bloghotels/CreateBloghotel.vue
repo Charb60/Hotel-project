@@ -2,7 +2,6 @@
   <div>
     <b-container class="bv-example-row">
       <b-row class="text-left">
-        <b-col></b-col>
         <b-col cols="10" class="bg1">
           <center>
             <h1><b>Hotel Bangkok</b></h1>
@@ -38,7 +37,6 @@
             </p>
           </form>
         </b-col>
-        <b-col> </b-col>
       </b-row>
     </b-container>
   </div>

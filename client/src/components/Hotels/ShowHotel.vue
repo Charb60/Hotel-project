@@ -2,7 +2,6 @@
   <div> 
     <b-container class="bv-example-row">
       <b-row class="text-left">
-        <b-col></b-col>
           <b-col cols="10" class="bg3">
             <center><h2><b><p>รายละเอียดของรายการที่พักโรงแรม</p></b></h2></center>
             <hr>
@@ -25,7 +24,6 @@
               </p>
             </div>
           </b-col>
-        <b-col> </b-col>
       </b-row>
     </b-container>
   </div>
@@ -55,3 +53,60 @@ export default {
   },
 };
 </script>
+<style scoped>
+    .dropbox {
+      outline: 2px dashed gray; /* the dash box */
+      outline-offset: -10px;
+      background: #f5fdaa;
+      color: dimgray;
+      padding: 10px 10px;
+      min-height: 200px; /* minimum height */
+      position: relative;
+      cursor: pointer;
+    }
+
+    .input-file {
+        opacity: 0; /* invisible but it's there! */
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .dropbox:hover {
+        background: #fceebe;
+    }
+
+    .dropbox p {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    ul.pictures {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      float: left;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    ul.pictures li {
+      float: left;
+    }
+    ul.pictures li img {
+      max-width: 180px;
+      margin-right: 20px;
+    }
+    .clearfix {
+      clear: both;
+    }
+    /* thumbnail */
+    .thumbnail-pic img{
+      width: 200px;
+    }
+    input {
+      width: 450px;
+    }
+
+</style>

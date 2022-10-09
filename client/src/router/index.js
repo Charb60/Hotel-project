@@ -19,14 +19,6 @@ import HotelCreate from '@/components/Hotels/CreateHotel'
 import HotelEdit from '@/components/Hotels/EditHotel'
 import HotelShow from '@/components/Hotels/ShowHotel'
 
-
-
-
-
-
-
-
-
 // upload testing
 import Upload from '@/components/Utils/Upload'
 
@@ -106,11 +98,6 @@ export default new Router({
       name: 'hotel',
       component: HotelShow
     },
-
-
-    
-
-
 
     // upload testing
     {
