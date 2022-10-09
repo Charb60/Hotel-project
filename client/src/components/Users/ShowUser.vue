@@ -2,22 +2,17 @@
     <div>
         <body>
         <section class="login">
-            <div class="login_box">
                 <div class="left">
-                    <div class="top_link"><a href="http://localhost:8080/users"><i class='fa fa-arrow-circle-left'>กลับสู่หน้าหลัก</i></a></div>
                     <div class="contact">
                         <form v-on:submit.prevent = "createUser">
                              <h3>แสดงข้อมูลผู้ใช้งาน</h3>
                                 <input type="text" v-model="user.name" placeholder="NAME">
                                 <input type="text" v-model="user.lastname" placeholder="LASTNAME">
-                                <input type="text" v-model="user.email" placeholder="USERNAME">
-                                
+                                <input type="text" v-model="user.email" placeholder="USERNAME">   
                         </form>
                     
                     </div>
                 </div>
-                
-            </div>
         </section>
     </body>
     </div>
@@ -41,33 +36,7 @@ export default {
 };
 </script>
 <style scoped>
-img{
-	width: 100%;
-}
 
-.login_box {
-    width: 920px;
-    height: 500px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 1px 4px 22px -8px #0004;
-    display: flex;
-    overflow: hidden;
-    margin-left: 120px;
-}
-.login_box .left{
-  width: 100%;
-  height: 100%;
-  padding: 25px 25px;
-}
-.login_box .right{
-  width: 0%;
-  height: 0%  
-}
 .left .top_link a {
     color: #6d6d6d;
     font-weight: 400;
@@ -123,44 +92,4 @@ img{
     box-shadow: 0px 9px 15px -11px rgb(54, 114, 72);
 }
 
-.right {
-	background: linear-gradient(212.38deg, rgba(252, 226, 5, 0.212) 0%, rgba(125, 203, 240, 0.377) 100%),url(https://static.seattletimes.com/wp-content/uploads/2019/01/web-typing-ergonomics-1020x680.jpg);
-	position: relative;
-}
-
-.right .right-text{
-  height: 100%;
-  position: relative;
-  transform: translate(0%, 40%);
-}
-.right-text h2{
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-size: 50px;
-  font-weight: 500;
-}
-.right-text h5{
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-size: 19px;
-  font-weight: 400;
-}
-
-.right .right-inductor{
-  position: absolute;
-  width: 70px;
-  height: 7px;
-  background: #fff0;
-  left: 50%;
-  bottom: 70px;
-  transform: translate(-50%, 0%);
-}
-.top_link img {
-    width: 18px;
-    padding-right: 7px;
-    margin-top: -3px;
-    color: #000000;
-}
 </style>
